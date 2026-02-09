@@ -1,0 +1,63 @@
+/* =============================================================================
+   Project Eidos — Design Tokens
+   OKLCH Color System
+   ============================================================================= */
+
+:root {
+  color-scheme: light;
+
+  /* Typography - Neutral / Technical */
+  /* Typography — Minimalist Sans-Serif */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Spacing System — Massive for Scrollytelling */
+  --space-unit: 1rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  --space-section: 40vh; /* Scrollytelling padding */
+
+  /* Surface System — q.ai Gallery White / High Performance */
+  --surface-0: #fbfbfb;  /* Gallery White - Main Background */
+  --surface-1: #ffffff;  /* Pure White - Elevated Surfaces */
+  --surface-2: #f5f5f7;  /* Light Grey - Secondary Surfaces */
+  --surface-3: #eeeeee;  /* Interactive/Stroke */
+
+  /* Text Tokens — Q.ai Deep Charcoal */
+  --text-primary: #121212; /* Deep Charcoal */
+  --text-muted: #666666;   /* Slate Gray */
+
+  /* Brand / Accent — Q.ai Fuzzy Wuzzy Brown / Earthy */
+  --accent: #bd684b;
+  --accent-foreground: #ffffff;
+
+  /* States */
+  --primary: var(--text-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--text-muted);
+  --border: #e5e7eb;
+  --ring: var(--accent);
+
+  --page-gutter: min(8vw, 120px); /* Calm, wide spacing */
+}
+
+/* Dark Mode Support (if toggled, but default is light) */
+.dark {
+  color-scheme: dark;
+  --surface-0: #020617; /* Slate-950 */
+  --surface-1: #0f172a; /* Slate-900 */
+  --surface-2: #1e293b; /* Slate-800 */
+  --surface-3: #334155; /* Slate-700 */
+  --text-primary: #f8fafc; /* Slate-50 */
+  --text-muted: #94a3b8;   /* Slate-400 */
+  --background: var(--surface-0);
+  --foreground: var(--text-primary);
+  --border: #1e293b;
+}

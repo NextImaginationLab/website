@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- NI monogram: N with small i in accent color breaking the diagonal -->
+  
+  <!-- Left vertical of N -->
+  <line x1="6" y1="6" x2="6" y2="26" stroke="#C97850" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Right vertical of N -->
+  <line x1="26" y1="6" x2="26" y2="26" stroke="#C97850" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Diagonal of N (broken with gap for i) -->
+  <line x1="6" y1="6" x2="11" y2="12" stroke="#C97850" stroke-width="4" stroke-linecap="round"/>
+  <line x1="21" y1="20" x2="26" y2="26" stroke="#C97850" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Small i in different color (white/light) -->
+  <line x1="16" y1="14" x2="16" y2="20" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="16" cy="11" r="1.5" fill="#FFFFFF"/>
+</svg>

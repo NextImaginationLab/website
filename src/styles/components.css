@@ -1,0 +1,26 @@
+/* =============================================================================
+   Project Eidos — Components
+   ============================================================================= */
+
+.btn-primary {
+  @apply px-6 py-3 bg-accent text-accent-foreground font-display font-bold uppercase tracking-widest rounded-md transition-all duration-200 hover:brightness-110 active:scale-95 shadow-lg;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-surface-2 text-foreground font-display font-bold uppercase tracking-widest rounded-md border border-border transition-all duration-200 hover:bg-surface-3 active:scale-95;
+}
+
+.feature-card {
+  @apply p-8 bg-surface-1/40 border border-border rounded-lg transition-all duration-300 hover:border-accent/40 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden;
+  &::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 transition-opacity duration-300;
+  }
+  &:hover::before {
+    @apply opacity-100;
+  }
+}
+
+.nav-link {
+  @apply text-sm font-bold uppercase tracking-widest text-muted-foreground transition-colors hover:text-accent cursor-pointer;
+}
